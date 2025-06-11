@@ -1,5 +1,5 @@
 <?xml version="1.0" ?>
-<grammar xmlns="http://www.w3.org/2001/06/grammar" version="1.0" root="basicCmd">
+<grammar xmlns="http://www.w3.org/2001/06/grammar" version="1.0" root="basicCmd" tag-format="semantics/1.0">
   <rule name="main_rule">
     <item>
       <one-of>
@@ -19,13 +19,13 @@
     <item>
       <item>require</item>
       <item>an</item>
-      <item>ambulance,</item>
+      <item>ambulance</item>
       <item>please</item>
       <item>hang</item>
       <item>up</item>
       <item>and</item>
       <item>dial</item>
-      <item>911.</item>
+      <item>911</item>
     </item>
   </rule>
   <rule name="rule_2">
@@ -33,12 +33,12 @@
       <item>are</item>
       <item>seeking</item>
       <item>medical</item>
-      <item>advise,</item>
+      <item>advise</item>
       <item>please</item>
       <item>call</item>
       <item>Telehealth</item>
       <item>Ontario</item>
-      <item>1-866-797-0000.</item>
+      <item>1-866-797-0000</item>
     </item>
   </rule>
   <rule name="rule_3">
@@ -51,7 +51,7 @@
       <item>an</item>
       <item>employee</item>
       <item>or</item>
-      <item>department,</item>
+      <item>department</item>
       <item>please</item>
       <item>say</item>
       <item>the</item>
@@ -62,7 +62,7 @@
       <item>extension</item>
       <item>at</item>
       <item>any</item>
-      <item>time.</item>
+      <item>time</item>
     </item>
   </rule>
   <rule name="rule_4">
@@ -106,7 +106,7 @@
       <item>Smith</item>
       <item>Falls</item>
       <item>District</item>
-      <item>Hospital.</item>
+      <item>Hospital</item>
     </item>
   </rule>
   <rule name="rule_7">
@@ -121,7 +121,7 @@
   <rule name="rule_8">
     <item>
       <item>Thank</item>
-      <item>you.</item>
+      <item>you</item>
       <item>I</item>
       <item>am</item>
       <item>transferring</item>
@@ -136,7 +136,7 @@
       <item>stay</item>
       <item>on</item>
       <item>the</item>
-      <item>line.</item>
+      <item>line</item>
       <item>I</item>
       <item>am</item>
       <item>transferring</item>
