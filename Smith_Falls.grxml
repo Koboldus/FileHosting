@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<grammar xmlns="http://www.w3.org/2001/06/grammar" xml:lang="en" root="main_rule" tag-format="semantics/1.0" mode="voice">
-  <rule id="main_rule">
+<grammar xmlns="http://www.w3.org/2001/06/grammar" xml:lang="en" root="ROOT" tag-format="semantics/1.0" mode="voice">
+  <rule id="ROOT">
     <one-of>
       <item>
         <ruleref uri="#recognized_department"/>
