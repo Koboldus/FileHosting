@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<grammar xmlns="http://www.w3.org/2001/06/grammar" xml:lang="en" root="basicCmd" tag-format="semantics/1.0" mode="voice">
-  <rule name="main_rule">
+<grammar xmlns="http://www.w3.org/2001/06/grammar" xml:lang="en" root="main_rule" tag-format="semantics/1.0" mode="voice">
+  <rule id="main_rule">
     <one-of>
       <item>
         <ruleref uri="#recognized_department"/>
@@ -16,7 +16,7 @@
     </one-of>
   </rule>
 
-  <rule name="emergency">
+  <rule id="emergency">
     <one-of>
       <item>Emergency</item>
       <item>
@@ -57,7 +57,7 @@
     <tag>out = {dept:"Emergency Department", dn:1101}</tag>
   </rule>
 
-  <rule name="registration">
+  <rule id="registration">
     <one-of>
       <item>Registration</item>
       <item>
@@ -68,7 +68,7 @@
     <tag>out = {dept:"Registration", dn:1111}</tag>
   </rule>
 
-  <rule name="med_surg">
+  <rule id="med_surg">
     <one-of>
       <item>
         <item>Med</item>
@@ -83,7 +83,7 @@
     <tag>out = {dept:"Med Surg", dn:1200}</tag>
   </rule>
 
-  <rule name="icu">
+  <rule id="icu">
     <one-of>
       <item>ICU</item>
       <item>
@@ -108,7 +108,7 @@
     <tag>out = {dept:"ICU", dn:1220}</tag>
   </rule>
 
-  <rule name="pharmacy">
+  <rule id="pharmacy">
     <one-of>
       <item>Pharmacy</item>
       <item>Drugs</item>
@@ -117,7 +117,7 @@
     <tag>out = {dept:"Pharmacy", dn:1240}</tag>
   </rule>
 
-  <rule name="or">
+  <rule id="or">
     <one-of>
       <item>OR</item>
       <item>
@@ -147,7 +147,7 @@
     <tag>out = {dept:"OR", dn:1300}</tag>
   </rule>
 
-  <rule name="laboratory">
+  <rule id="laboratory">
     <one-of>
       <item>Laboratory</item>
       <item>Lab</item>
@@ -155,7 +155,7 @@
     <tag>out = {dept:"Laboratory", dn:1450}</tag>
   </rule>
 
-  <rule name="physician">
+  <rule id="physician">
     <one-of>
       <item>Physician</item>
       <item>
@@ -166,7 +166,7 @@
     <tag>out = {dept:"Physician", dn:1500}</tag>
   </rule>
 
-  <rule name="lcmh">
+  <rule id="lcmh">
     <one-of>
       <item>LCMH</item>
       <item>
@@ -177,7 +177,7 @@
     <tag>out = {dept:"LCMH", dn:1608}</tag>
   </rule>
 
-  <rule name="ccac">
+  <rule id="ccac">
     <one-of>
       <item>CCAC</item>
       <item>
@@ -188,7 +188,7 @@
     <tag>out = {dept:"CCAC", dn:1610}</tag>
   </rule>
 
-  <rule name="sadv">
+  <rule id="sadv">
     <one-of>
       <item>SADV</item>
       <item>
@@ -202,7 +202,7 @@
     <tag>out = {dept:"SADV", dn:1660}</tag>
   </rule>
 
-  <rule name="amb_clinic">
+  <rule id="amb_clinic">
     <one-of>
       <item>
         <item>Ambulatory</item>
@@ -218,7 +218,7 @@
     <tag>out = {dept:"Amb Clinic", dn:1700}</tag>
   </rule>
 
-  <rule name="physical_therapy">
+  <rule id="physical_therapy">
     <one-of>
       <item>Physio</item>
       <item>
@@ -233,7 +233,7 @@
     <tag>out = {dept:"Physio", dn:1720}</tag>
   </rule>
 
-  <rule name="health_records">
+  <rule id="health_records">
     <one-of>
       <item>
         <item>Health</item>
@@ -248,7 +248,7 @@
     <tag>out = {dept:"Health Records", dn:1800}</tag>
   </rule>
 
-  <rule name="human_resources">
+  <rule id="human_resources">
     <one-of>
       <item>
         <item>Human</item>
@@ -259,7 +259,7 @@
     <tag>out = {dept:"Human Resources", dn:1888}</tag>
   </rule>
 
-  <rule name="administration">
+  <rule id="administration">
     <one-of>
       <item>Administration</item>
       <item>Admin</item>
@@ -277,7 +277,7 @@
     <tag>out = {dept:"Administration", dn:2501}</tag>
   </rule>
 
-  <rule name="senior_management">
+  <rule id="senior_management">
     <one-of>
       <item>
         <item>Senior</item>
@@ -293,7 +293,7 @@
     <tag>out = {dept:"Sr. Leadership", dn:2510}</tag>
   </rule>
 
-  <rule name="scheduling">
+  <rule id="scheduling">
     <one-of>
       <item>Scheduling</item>
       <item>Appointments</item>
@@ -301,7 +301,7 @@
     <tag>out = {dept:"Scheduling", dn:4200}</tag>
   </rule>
 
-  <rule name="it_his">
+  <rule id="it_his">
     <one-of>
       <item>IT</item>
       <item>HIS</item>
@@ -314,7 +314,7 @@
     <tag>out = {dept:"IT/HIS", dn:4350}</tag>
   </rule>
 
-  <rule name="other">
+  <rule id="other">
     <one-of>
       <item>
         Communications
@@ -413,7 +413,7 @@
     </one-of>
   </rule>
 
-  <rule name="recognized_department">
+  <rule id="recognized_department">
     <one-of>
       <item>
         <ruleref uri="#emergency"/>
@@ -478,7 +478,7 @@
     </one-of>
   </rule>
 
-  <rule name="full_name">
+  <rule id="full_name">
     <one-of>
       <item>
         <ruleref uri="#jill_labelle"/>
@@ -579,224 +579,224 @@
     </one-of>
   </rule>
 
-  <rule name="jill_labelle">
+  <rule id="jill_labelle">
     <item>
       Jill Labelle
       <tag>out = {dept:"Med Surg", name:"Jill Labelle", dn:1208}</tag>
     </item>
   </rule>
 
-  <rule name="mary_beth_hennin">
+  <rule id="mary_beth_hennin">
     <item>
       Mary Beth Hennin
       <tag>out = {dept:"ICU", name:"Mary Beth Hennin", dn:1222}</tag>
     </item>
   </rule>
 
-  <rule name="jacqueline_roberts">
+  <rule id="jacqueline_roberts">
     <item>
       Jacqueline Roberts
       <tag>out = {dept:"Pharmacy", name:"Jacqueline Roberts", dn:1242}</tag>
     </item>
   </rule>
 
-  <rule name="rosa_vigliotti">
+  <rule id="rosa_vigliotti">
     <item>
       Rosa Vigliotti
       <tag>out = {dept:"Staff", name:"Rosa Vigliotti", dn:1250}</tag>
     </item>
   </rule>
 
-  <rule name="karen_kelly">
+  <rule id="karen_kelly">
     <item>
       Karen Kelly
       <tag>out = {dept:"Communications", name:"Karen Kelly", dn:1251}</tag>
     </item>
   </rule>
 
-  <rule name="brogan_burchill">
+  <rule id="brogan_burchill">
     <item>
       Brogan Burchill
       <tag>out = {dept:"Education", name:"Brogan Burchill", dn:1252}</tag>
     </item>
   </rule>
 
-  <rule name="wendy_mcphee">
+  <rule id="wendy_mcphee">
     <item>
       Wendy McPhee
       <tag>out = {dept:"OR", name:"Wendy McPhee", dn:1305}</tag>
     </item>
   </rule>
 
-  <rule name="behrooz_izadi">
+  <rule id="behrooz_izadi">
     <item>
       Behrooz Izadi
       <tag>out = {dept:"Radiology", name:"Behrooz Izadi", dn:1402}</tag>
     </item>
   </rule>
 
-  <rule name="kim_kerner">
+  <rule id="kim_kerner">
     <item>
       Kim Kerner
       <tag>out = {dept:"Laboratory", name:"Kim Kerner", dn:1451}</tag>
     </item>
   </rule>
 
-  <rule name="cecila_galveias">
+  <rule id="cecila_galveias">
     <item>
       Cecila Galveias
       <tag>out = {dept:"Palliative", name:"Cecila Galveias", dn:1640}</tag>
     </item>
   </rule>
 
-  <rule name="yan_mclloyd_fraser">
+  <rule id="yan_mclloyd_fraser">
     <item>
       Yan McLloyd Fraser
       <tag>out = {dept:"SADV", name:"Yan McLloyd Fraser", dn:1661}</tag>
     </item>
   </rule>
 
-  <rule name="jennifer_cummings">
+  <rule id="jennifer_cummings">
     <item>
       Jennifer Cummings
       <tag>out = {dept:"Human Resources", name:"Jennifer Cummings", dn:1881}</tag>
     </item>
   </rule>
 
-  <rule name="maureen_lemmaire">
+  <rule id="maureen_lemmaire">
     <item>
       Maureen Lemmaire
       <tag>out = {dept:"Human Resources", name:"Maureen Lemmaire", dn:1882}</tag>
     </item>
   </rule>
 
-  <rule name="jill_eastwood">
+  <rule id="jill_eastwood">
     <item>
       Jill Eastwood
       <tag>out = {dept:"Human Resources", name:"Jill Eastwood", dn:1883}</tag>
     </item>
   </rule>
 
-  <rule name="jeanne_bellevue">
+  <rule id="jeanne_bellevue">
     <item>
       Jeanne Bellevue
       <tag>out = {dept:"Finance", name:"Jeanne Bellevue", dn:1902}</tag>
     </item>
   </rule>
 
-  <rule name="andrew_harris">
+  <rule id="andrew_harris">
     <item>
       Andrew Harris
       <tag>out = {dept:"Food Services", name:"Andrew Harris", dn:1957}</tag>
     </item>
   </rule>
 
-  <rule name="desiree_kray">
+  <rule id="desiree_kray">
     <item>
       Desiree Kray
       <tag>out = {dept:"Facilities", name:"Desiree Kray", dn:1974}</tag>
     </item>
   </rule>
 
-  <rule name="keitha_rustan">
+  <rule id="keitha_rustan">
     <item>
       Keitha Rustan
       <tag>out = {dept:"Administration", name:"Keitha Rustan", dn:2501}</tag>
     </item>
   </rule>
 
-  <rule name="jeff_henehagan">
+  <rule id="jeff_henehagan">
     <item>
       Jeff Henehagan
       <tag>out = {dept:"Administration", name:"Jeff Henehagan", dn:2502}</tag>
     </item>
   </rule>
 
-  <rule name="chelsea_cohen">
+  <rule id="chelsea_cohen">
     <item>
       Chelsea Cohen
       <tag>out = {dept:"Sr. Leadership", name:"Chelsea Cohen", dn:2510}</tag>
     </item>
   </rule>
 
-  <rule name="laura_mostamandi">
+  <rule id="laura_mostamandi">
     <item>
       Laura Mostamandi
       <tag>out = {dept:"Sr. Leadership", name:"Laura Mostamandi", dn:2511}</tag>
     </item>
   </rule>
 
-  <rule name="michael_farrell">
+  <rule id="michael_farrell">
     <item>
       Michael Farrell
       <tag>out = {dept:"Sr. Leadership", name:"Michael Farrell", dn:2512}</tag>
     </item>
   </rule>
 
-  <rule name="homayra_smith">
+  <rule id="homayra_smith">
     <item>
       Homayra Smith
       <tag>out = {dept:"Sr. Leadership", name:"Homayra Smith", dn:2513}</tag>
     </item>
   </rule>
 
-  <rule name="erin_bagshaw">
+  <rule id="erin_bagshaw">
     <item>
       Erin Bagshaw
       <tag>out = {dept:"IT/HIS", name:"Erin Bagshaw", dn:4351}</tag>
     </item>
   </rule>
 
-  <rule name="brian_cadue">
+  <rule id="brian_cadue">
     <item>
       Brian Cadue
       <tag>out = {dept:"IT/HIS", name:"Brian Cadue", dn:4352}</tag>
     </item>
   </rule>
 
-  <rule name="miranda_mackenzie">
+  <rule id="miranda_mackenzie">
     <item>
       Miranda MacKenzie
       <tag>out = {dept:"IT/HIS", name:"Miranda MacKenzie", dn:4353}</tag>
     </item>
   </rule>
 
-  <rule name="andrew_davies">
+  <rule id="andrew_davies">
     <item>
       Andrew Davies
       <tag>out = {dept:"IT/HIS", name:"Andrew Davies", dn:4354}</tag>
     </item>
   </rule>
 
-  <rule name="joel_downie">
+  <rule id="joel_downie">
     <item>
       Joel Downie
       <tag>out = {dept:"IT/HIS", name:"Joel Downie", dn:4358}</tag>
     </item>
   </rule>
 
-  <rule name="cameron_davis">
+  <rule id="cameron_davis">
     <item>
       Cameron Davis
       <tag>out = {dept:"IT/HIS", name:"Cameron Davis", dn:4355}</tag>
     </item>
   </rule>
 
-  <rule name="jenna_denardi">
+  <rule id="jenna_denardi">
     <item>
       Jenna Denardi
       <tag>out = {dept:"IT/HIS", name:"Jenna Denardi", dn:4360}</tag>
     </item>
   </rule>
 
-  <rule name="les_jenner">
+  <rule id="les_jenner">
     <item>
       Les Jenner
       <tag>out = {dept:"IT/HIS", name:"Les Jenner", dn:4361}</tag>
     </item>
   </rule>
 
-  <rule name="peter_leboeuf">
+  <rule id="peter_leboeuf">
     <item>
       Peter Leboeuf
       <tag>out = {dept:"IT/HIS", name:"Peter Leboeuf", dn:4444}</tag>
