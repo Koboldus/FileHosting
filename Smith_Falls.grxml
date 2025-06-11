@@ -1,5 +1,11 @@
-<?xml version="1.0" ?>
-<grammar xmlns="http://www.w3.org/2001/06/grammar" version="1.0" root="basicCmd" tag-format="semantics/1.0">
+<?xml version="1.0" encoding="UTF-8"?>
+<grammar
+  xmlns="http://www.w3.org/2001/06/grammar"
+  xml:lang="en"
+  version="1.0"
+  root="basicCmd"
+  tag-format="semantics/1.0"
+  mode="voice">
   <rule name="main_rule">
     <item>
       <one-of>
