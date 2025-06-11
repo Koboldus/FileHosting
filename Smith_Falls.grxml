@@ -1,12 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <grammar xmlns="http://www.w3.org/2001/06/grammar" xml:lang="en" root="basicCmd" tag-format="semantics/1.0" mode="voice">
   <rule name="main_rule">
-    <item>
-      <ruleref uri="#full_name"/>
-    </item>
-    <item repeat="0-1">
-      <ruleref uri="#recognized_department"/>
-    </item>
+    <one-of>
+      <item>
+        <ruleref uri="#recognized_department"/>
+      </item>
+      <item>
+        <item>
+          <ruleref uri="#full_name"/>
+        </item>
+        <item repeat="0-1">
+          <ruleref uri="#recognized_department"/>
+        </item>
+      </item>
+    </one-of>
   </rule>
 
   <rule name="emergency">
