@@ -1,0 +1,589 @@
+<?xml version="1.0" ?>
+<grammar xmlns="http://www.w3.org/2001/06/grammar" xml:lang="en" root="root" tag-format="semantics/1.0" mode="voice">
+  <rule id="emergency">
+    <one-of>
+      <item>
+        <item>Emergency</item>
+      </item>
+      <item>
+        <item>Medical</item>
+        <item>Emergency</item>
+      </item>
+      <item>
+        <item>Emergency</item>
+        <item>Department</item>
+      </item>
+      <item>
+        <item>Emergency</item>
+        <item>Room</item>
+      </item>
+      <item>
+        <item>Accident</item>
+        <item>and</item>
+        <item>Emergency</item>
+      </item>
+      <item>ED</item>
+      <item>ER</item>
+      <item>
+        <item>A</item>
+        <item>and</item>
+        <item>E</item>
+      </item>
+    </one-of>
+    <tag>out.dept='Emergency '; out.dn='1101'</tag>
+  </rule>
+  <rule id="registration">
+    <item>Registration</item>
+    <tag>out.dept='Registration'; out.dn='1111'</tag>
+  </rule>
+  <rule id="patient_flow">
+    <item>
+      <item>Patient</item>
+      <item>Flow</item>
+    </item>
+    <tag>out.dept='Patient Flow'; out.dn='1196'</tag>
+  </rule>
+  <rule id="med_surg">
+    <one-of>
+      <item>
+        <item>Med</item>
+        <item>Surg</item>
+      </item>
+      <item>
+        <item>Medical</item>
+        <item>Surgery</item>
+      </item>
+      <item>Surgery</item>
+    </one-of>
+    <tag>out.dept='Med Surg'; out.dn='1200'</tag>
+  </rule>
+  <rule id="jill_labelle">
+    <item>
+      <item>Jill</item>
+      <item>Labelle</item>
+    </item>
+    <tag>out.dept='Med Surg'; out.name='Jill Labelle'; out.dn='1208'</tag>
+  </rule>
+  <rule id="icu">
+    <one-of>
+      <item>
+        <item>Intensive</item>
+        <item>Care</item>
+        <item>Unit</item>
+      </item>
+      <item>
+        <item>Critical</item>
+        <item>Care</item>
+        <item>Unit</item>
+      </item>
+      <item>
+        <item>Neonatal</item>
+        <item>Intensive</item>
+        <item>Care</item>
+        <item>Unit</item>
+      </item>
+      <item>ICU</item>
+      <item>CCU</item>
+      <item>NICU</item>
+    </one-of>
+    <tag>out.dept='ICU '; out.dn='1220'</tag>
+  </rule>
+  <rule id="mary_beth_hennin">
+    <item>
+      <item>Mary</item>
+      <item>Beth</item>
+      <item>Hennin</item>
+    </item>
+    <tag>out.dept='ICU'; out.name='Mary Beth Hennin'; out.dn='1222'</tag>
+  </rule>
+  <rule id="pharmacy">
+    <one-of>
+      <item>Pharmacy</item>
+      <item>Drugs</item>
+      <item>Medicines</item>
+    </one-of>
+    <tag>out.dept='Pharmacy'; out.dn='1240'</tag>
+  </rule>
+  <rule id="jacqueline_roberts">
+    <item>
+      <item>Jacqueline</item>
+      <item>Roberts</item>
+    </item>
+    <tag>out.dept='Pharmacy'; out.name='Jacqueline Roberts'; out.dn='1242'</tag>
+  </rule>
+  <rule id="rosa_vigliotti">
+    <item>
+      <item>Rosa</item>
+      <item>Vigliotti</item>
+    </item>
+    <tag>out.dept='Staff'; out.name='Rosa Vigliotti'; out.dn='1250'</tag>
+  </rule>
+  <rule id="karen_kelly">
+    <item>
+      <item>Karen</item>
+      <item>Kelly</item>
+    </item>
+    <tag>out.dept='Communications'; out.name='Karen Kelly'; out.dn='1251'</tag>
+  </rule>
+  <rule id="brogan_burchill">
+    <item>
+      <item>Brogan</item>
+      <item>Burchill</item>
+    </item>
+    <tag>out.dept='Education'; out.name='Brogan Burchill'; out.dn='1252'</tag>
+  </rule>
+  <rule id="or">
+    <one-of>
+      <item>OR</item>
+      <item>
+        <item>Operating</item>
+        <item>Room</item>
+      </item>
+      <item>
+        <item>Main</item>
+        <item>OR</item>
+      </item>
+      <item>
+        <item>Main</item>
+        <item>Operating</item>
+        <item>Room</item>
+      </item>
+      <item>OT</item>
+      <item>
+        <item>Operating</item>
+        <item>Theater</item>
+      </item>
+      <item>
+        <item>Main</item>
+        <item>Operating</item>
+        <item>Theater</item>
+      </item>
+    </one-of>
+    <tag>out.dept='OR'; out.dn='1300'</tag>
+  </rule>
+  <rule id="wendy_mcphee">
+    <item>
+      <item>Wendy</item>
+      <item>Mcphee</item>
+    </item>
+    <tag>out.dept='OR'; out.name='Wendy Mcphee'; out.dn='1305'</tag>
+  </rule>
+  <rule id="obstetrics">
+    <item>Obstetrics</item>
+    <tag>out.dept='Obstetrics'; out.dn='1320'</tag>
+  </rule>
+  <rule id="radiology">
+    <item>Radiology</item>
+    <tag>out.dept='Radiology'; out.dn='1400'</tag>
+  </rule>
+  <rule id="behrooz_izadi">
+    <item>
+      <item>Behrooz</item>
+      <item>Izadi</item>
+    </item>
+    <tag>out.dept='Radiology'; out.name='Behrooz Izadi'; out.dn='1402'</tag>
+  </rule>
+  <rule id="kim_kehoe">
+    <item>
+      <item>Kim</item>
+      <item>Kehoe</item>
+    </item>
+    <tag>out.dept='Laboratory'; out.name='Kim Kehoe'; out.dn='1451'</tag>
+  </rule>
+  <rule id="physician">
+    <one-of>
+      <item>Physician</item>
+      <item>
+        <item>Physician</item>
+        <item>Office</item>
+      </item>
+    </one-of>
+    <tag>out.dept='Physician'; out.dn='1500'</tag>
+  </rule>
+  <rule id="yan_wang">
+    <item>
+      <item>Yan</item>
+      <item>Wang</item>
+    </item>
+    <tag>out.dept='Physician'; out.name='Yan Wang'; out.dn='1504'</tag>
+  </rule>
+  <rule id="occupational_therapy">
+    <item>
+      <item>Occupational</item>
+      <item>Therapy</item>
+    </item>
+    <tag>out.dept='Occupational Therapy'; out.dn='1600'</tag>
+  </rule>
+  <rule id="speech_therapy">
+    <item>
+      <item>Speech</item>
+      <item>Therapy</item>
+    </item>
+    <tag>out.dept='Speech Therapy'; out.dn='1607'</tag>
+  </rule>
+  <rule id="jennifer_galveias">
+    <item>
+      <item>Jennifer</item>
+      <item>Galveias</item>
+    </item>
+    <tag>out.dept='Palliative'; out.name='Jennifer Galveias'; out.dn='1640'</tag>
+  </rule>
+  <rule id="dietician">
+    <item>Dietician</item>
+    <tag>out.dept='Dietician'; out.dn='1680'</tag>
+  </rule>
+  <rule id="ecg">
+    <item>ECG</item>
+    <tag>out.dept='ECG'; out.dn='1690'</tag>
+  </rule>
+  <rule id="infection_control">
+    <item>
+      <item>Infection</item>
+      <item>Control</item>
+    </item>
+    <tag>out.dept='Infection Control'; out.dn='1696'</tag>
+  </rule>
+  <rule id="dialysis">
+    <item>Dialysis</item>
+    <tag>out.dept='Dialysis'; out.dn='1710'</tag>
+  </rule>
+  <rule id="health_records">
+    <one-of>
+      <item>
+        <item>Health</item>
+        <item>Records</item>
+      </item>
+      <item>EMR</item>
+      <item>
+        <item>Transcription</item>
+        <item>Records</item>
+      </item>
+    </one-of>
+    <tag>out.dept='Health Records'; out.dn='1800'</tag>
+  </rule>
+  <rule id="jill_cummings">
+    <item>
+      <item>Jill</item>
+      <item>Cummings</item>
+    </item>
+    <tag>out.dept='Human Resources'; out.name='Jill Cummings'; out.dn='1881'</tag>
+  </rule>
+  <rule id="andrew_eastwood">
+    <item>
+      <item>Andrew</item>
+      <item>Eastwood</item>
+    </item>
+    <tag>out.dept='Human Resources'; out.name='Andrew Eastwood'; out.dn='1883'</tag>
+  </rule>
+  <rule id="human_resources">
+    <one-of>
+      <item>
+        <item>Human</item>
+        <item>Resources</item>
+      </item>
+      <item>HR</item>
+    </one-of>
+    <tag>out.dept='Human Resources'; out.dn='1888'</tag>
+  </rule>
+  <rule id="desiree_bellevue">
+    <item>
+      <item>Desiree</item>
+      <item>Bellevue</item>
+    </item>
+    <tag>out.dept='Finance'; out.name='Desiree Bellevue'; out.dn='1902'</tag>
+  </rule>
+  <rule id="keitha_harris">
+    <item>
+      <item>Keitha</item>
+      <item>Harris</item>
+    </item>
+    <tag>out.dept='Food Services'; out.name='Keitha Harris'; out.dn='1957'</tag>
+  </rule>
+  <rule id="morgue">
+    <item>Morgue</item>
+    <tag>out.dept='Morgue'; out.dn='1999'</tag>
+  </rule>
+  <rule id="chelsea_rustan">
+    <item>
+      <item>Chelsea</item>
+      <item>Rustan</item>
+    </item>
+    <tag>out.dept='Administration'; out.name='Chelsea Rustan'; out.dn='2501'</tag>
+  </rule>
+  <rule id="michael_cohen">
+    <item>
+      <item>Michael</item>
+      <item>Cohen</item>
+    </item>
+    <tag>out.dept='Sr. Leadership'; out.name='Michael Cohen'; out.dn='2510'</tag>
+  </rule>
+  <rule id="homayra_mostamandi">
+    <item>
+      <item>Homayra</item>
+      <item>Mostamandi</item>
+    </item>
+    <tag>out.dept='Sr. Leadership'; out.name='Homayra Mostamandi'; out.dn='2511'</tag>
+  </rule>
+  <rule id="brian_smith">
+    <item>
+      <item>Brian</item>
+      <item>Smith</item>
+    </item>
+    <tag>out.dept='Sr. Leadership'; out.name='Brian Smith'; out.dn='2513'</tag>
+  </rule>
+  <rule id="scheduling">
+    <one-of>
+      <item>Scheduling</item>
+      <item>Appointments</item>
+    </one-of>
+    <tag>out.dept='Scheduling'; out.dn='4200'</tag>
+  </rule>
+  <rule id="full_name">
+    <one-of>
+      <item>
+        <ruleref uri="#jill_labelle"/>
+      </item>
+      <item>
+        <ruleref uri="#mary_beth_hennin"/>
+      </item>
+      <item>
+        <ruleref uri="#jacqueline_roberts"/>
+      </item>
+      <item>
+        <ruleref uri="#rosa_vigliotti"/>
+      </item>
+      <item>
+        <ruleref uri="#karen_kelly"/>
+      </item>
+      <item>
+        <ruleref uri="#brogan_burchill"/>
+      </item>
+      <item>
+        <ruleref uri="#wendy_mcphee"/>
+      </item>
+      <item>
+        <ruleref uri="#behrooz_izadi"/>
+      </item>
+      <item>
+        <ruleref uri="#kim_kehoe"/>
+      </item>
+      <item>
+        <ruleref uri="#cecila_kerner"/>
+      </item>
+      <item>
+        <ruleref uri="#yan_wang"/>
+      </item>
+      <item>
+        <ruleref uri="#jennifer_galveias"/>
+      </item>
+      <item>
+        <ruleref uri="#maureen_mclloyd_fraser"/>
+      </item>
+      <item>
+        <ruleref uri="#jill_cummings"/>
+      </item>
+      <item>
+        <ruleref uri="#jeanne_lemmaire"/>
+      </item>
+      <item>
+        <ruleref uri="#andrew_eastwood"/>
+      </item>
+      <item>
+        <ruleref uri="#desiree_bellevue"/>
+      </item>
+      <item>
+        <ruleref uri="#keitha_harris"/>
+      </item>
+      <item>
+        <ruleref uri="#jeff_kray"/>
+      </item>
+      <item>
+        <ruleref uri="#chelsea_rustan"/>
+      </item>
+      <item>
+        <ruleref uri="#laura_henehagan"/>
+      </item>
+      <item>
+        <ruleref uri="#michael_cohen"/>
+      </item>
+      <item>
+        <ruleref uri="#homayra_mostamandi"/>
+      </item>
+      <item>
+        <ruleref uri="#erin_farrell"/>
+      </item>
+      <item>
+        <ruleref uri="#brian_smith"/>
+      </item>
+      <item>
+        <ruleref uri="#miranda_bagshaw"/>
+      </item>
+      <item>
+        <ruleref uri="#andrew_cadue"/>
+      </item>
+      <item>
+        <ruleref uri="#joel_mackenzie"/>
+      </item>
+      <item>
+        <ruleref uri="#cameron_davies"/>
+      </item>
+      <item>
+        <ruleref uri="#jenna_downie"/>
+      </item>
+      <item>
+        <ruleref uri="#les_davis"/>
+      </item>
+      <item>
+        <ruleref uri="#peter_denardi"/>
+      </item>
+      <item>
+        <ruleref uri="#seann_jenner"/>
+      </item>
+      <item>
+        <ruleref uri="#darrin_leboeuf"/>
+      </item>
+    </one-of>
+  </rule>
+  <rule id="department">
+    <one-of>
+      <item>
+        <ruleref uri="#emergency"/>
+      </item>
+      <item>
+        <ruleref uri="#registration"/>
+      </item>
+      <item>
+        <ruleref uri="#med_surg"/>
+      </item>
+      <item>
+        <ruleref uri="#icu"/>
+      </item>
+      <item>
+        <ruleref uri="#pharmacy"/>
+      </item>
+      <item>
+        <ruleref uri="#communications"/>
+      </item>
+      <item>
+        <ruleref uri="#education"/>
+      </item>
+      <item>
+        <ruleref uri="#procurement"/>
+      </item>
+      <item>
+        <ruleref uri="#or"/>
+      </item>
+      <item>
+        <ruleref uri="#obstetrics"/>
+      </item>
+      <item>
+        <ruleref uri="#gift_shop"/>
+      </item>
+      <item>
+        <ruleref uri="#information_desk"/>
+      </item>
+      <item>
+        <ruleref uri="#boardroom"/>
+      </item>
+      <item>
+        <ruleref uri="#classroom"/>
+      </item>
+      <item>
+        <ruleref uri="#radiology"/>
+      </item>
+      <item>
+        <ruleref uri="#laboratory"/>
+      </item>
+      <item>
+        <ruleref uri="#physician"/>
+      </item>
+      <item>
+        <ruleref uri="#occupational_therapy"/>
+      </item>
+      <item>
+        <ruleref uri="#occupational_health"/>
+      </item>
+      <item>
+        <ruleref uri="#respiratory"/>
+      </item>
+      <item>
+        <ruleref uri="#speech_therapy"/>
+      </item>
+      <item>
+        <ruleref uri="#palliative"/>
+      </item>
+      <item>
+        <ruleref uri="#lcmh"/>
+      </item>
+      <item>
+        <ruleref uri="#ccac"/>
+      </item>
+      <item>
+        <ruleref uri="#sadv"/>
+      </item>
+      <item>
+        <ruleref uri="#clinic"/>
+      </item>
+      <item>
+        <ruleref uri="#dietician"/>
+      </item>
+      <item>
+        <ruleref uri="#ecg"/>
+      </item>
+      <item>
+        <ruleref uri="#infection_control"/>
+      </item>
+      <item>
+        <ruleref uri="#amb_clinic"/>
+      </item>
+      <item>
+        <ruleref uri="#dialysis"/>
+      </item>
+      <item>
+        <ruleref uri="#physical_therapy"/>
+      </item>
+      <item>
+        <ruleref uri="#health_records"/>
+      </item>
+      <item>
+        <ruleref uri="#human_resources"/>
+      </item>
+      <item>
+        <ruleref uri="#finance"/>
+      </item>
+      <item>
+        <ruleref uri="#facilities"/>
+      </item>
+      <item>
+        <ruleref uri="#morgue"/>
+      </item>
+      <item>
+        <ruleref uri="#administration"/>
+      </item>
+      <item>
+        <ruleref uri="#senior_management"/>
+      </item>
+      <item>
+        <ruleref uri="#scheduling"/>
+      </item>
+      <item>
+        <ruleref uri="#it/his"/>
+      </item>
+    </one-of>
+  </rule>
+  <rule id="root">
+    <one-of>
+      <item>
+        <ruleref uri="#department"/>
+      </item>
+      <item>
+        <item>
+          <ruleref uri="#full_name"/>
+        </item>
+        <item repeat="0-1">
+          <ruleref uri="#department"/>
+        </item>
+      </item>
+    </one-of>
+  </rule>
+</grammar>
