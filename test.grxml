@@ -2,9 +2,7 @@
 <grammar xmlns="http://www.w3.org/2001/06/grammar" xml:lang="en" root="root" tag-format="semantics/1.0" mode="voice">
   <rule id="emergency">
     <one-of>
-      <item>
-        <item>Emergency</item>
-      </item>
+      <item>Emergency</item>
       <item>
         <item>Medical</item>
         <item>Emergency</item>
@@ -30,7 +28,7 @@
         <item>E</item>
       </item>
     </one-of>
-    <tag>out.dept='Emergency '; out.dn='1101'</tag>
+    <tag>out.dept='Emergency'; out.dn='1101'</tag>
   </rule>
   <rule id="registration">
     <item>Registration</item>
@@ -86,7 +84,7 @@
       <item>CCU</item>
       <item>NICU</item>
     </one-of>
-    <tag>out.dept='ICU '; out.dn='1220'</tag>
+    <tag>out.dept='ICU'; out.dn='1220'</tag>
   </rule>
   <rule id="mary_beth_hennin">
     <item>
